@@ -1,7 +1,7 @@
 name: cmdataaction2 CI Sequential
 on:
  push:
-   branches: [main ]
+   branches: [ main ]
      
 jobs:
   hello1:
@@ -10,7 +10,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: say hello
-        run: echo "Hello from $GITHUB_WORKFLOW on commit $GITHUB_SHA Job 1 on commit"
+        run: echo "Hello from $GITHUB_WORKFLOW on commit $GITHUB_SHA"
 
   # hello2:
   #  runs-on: ubuntu-latest
